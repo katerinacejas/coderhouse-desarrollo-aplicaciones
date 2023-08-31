@@ -8,22 +8,22 @@ export const miEstilo = StyleSheet.create({
 		padding: 30,
 	},
 	text_input: {
-		borderBottomColor: "black",
+		borderBottomColor: "white",
 		borderBottomWidth: 1,
 		width: 200,
 		height: 50,
 		fontSize: 24,
 		paddingLeft: 10,
-		color: "#ff0000",
+		color: "#000000",
+		fontWeight: 'bold',
 	},
 	view_boton_textinput: {
 		flexDirection: 'row',
 		justifyContent: 'space-between',
 		alignItems: 'center',
 		marginTop: 90,
-	},
-	boton: {
-		padding: 150,
+		borderRadius: 10,
+		backgroundColor: "#D4E8E3",
 	},
 	separator: {
 		marginVertical: 8,
@@ -41,7 +41,7 @@ export const miEstilo = StyleSheet.create({
 		alignItems: "center",
 		borderWidth: 2,
 		marginVertical: 10,
-		width: "90%",
+		width: "100%",
 		backgroundColor: "red",
 		padding: 10,
 	},
@@ -51,5 +51,40 @@ export const miEstilo = StyleSheet.create({
 		borderColor: "red",
 		borderWidth: 2,
 		marginTop: 40,
+	},
+	titulo: {
+		marginTop: 90,
+		fontSize: 35,
+		fontWeight: '500',
+		marginBottom: 25,
+	},
+	modalContainer: {
+		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
+	},
+	modalContent: {
+		backgroundColor: 'white',
+		borderRadius: 20,
+		padding: 35,
+		alignItems: 'center',
+		shadowColor: '#000',
+		shadowOffset: { width: 0, height: 3 },
+		shadowOpacity: 0.2,
+		shadowRadius: 3,
+		elevation: 5,
+	},
+	modalTitle: {
+		backgroundColor: '#ccc',
+		color: '#fff',
+		fontSize: 18,
+	},
+	modalMessage: {
+		marginBottom: 15,
+		justifyContent: 'center',
+		alignItems: 'center',
+	},
+	modalButton: {
+		marginTop: 15,
 	}
 });
